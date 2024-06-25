@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block title %} Projects {% endblock  %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" style="height: 80px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="name" href="#">Emmanuel Tetteh Totimeh</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link "  href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-pill text-white" href="/resume" style="font-weight: bold; font-size: 18px; padding: 8px 20px;">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card" id="card1">
+                <img src="static/project1.jpg"  class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title">Smart Greenhouse System</h5>
+                    <p class="card-text">Embedded System project to measure humidity, temperature and soil moisture sensor.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card" id= "card2">
+                <img src="static/portfolio.png" width="200px" height="290px" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title">Portfolio Website</h5>
+                    <p class="card-text">I built a portfolio website using Python's Flask and Bootstrap.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card" id="card3">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                    <h5 class="card-title">Project 3</h5>
+                    <p class="card-text">Description of Project 3. You can add a brief summary here.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 4">
+                <div class="card-body">
+                    <h5 class="card-title">Project 4</h5>
+                    <p class="card-text">Description of Project 4. You can add a brief summary here.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 5">
+                <div class="card-body">
+                    <h5 class="card-title">Project 5</h5>
+                    <p class="card-text">Description of Project 5. You can add a brief summary here.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 6">
+                <div class="card-body">
+                    <h5 class="card-title">Project 6</h5>
+                    <p class="card-text">Description of Project 6. You can add a brief summary here.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+        <span class="text-muted">
+            &copy; 2024 Emmanuel Tetteh Totimeh. All rights reserved.
+        </span>
+    </div>
+</footer>
+
+
+{% endblock %}

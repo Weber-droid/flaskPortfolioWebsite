@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock  %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" style="height: 80px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="name" href="#">Emmanuel Tetteh Totimeh</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-pill text-white" href="/resume" style="font-weight: bold; font-size: 18px; padding: 8px 20px;">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+
+<section id="about" class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">          
+            <img src="static/mypic.jpg" id="mypic" alt="Emmanuel" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-md-8">
+            <h2>About Me</h2>
+            <pre>
+* 👋Hi, I am Emmanuel Tetteh Totimeh, a Computer Science Student passionate
+  about web development specifically the backend.
+                
+* 👀 I have a keen interest in software engineering and development, 
+  encompassing a diverse range of stacks from front-end to back-end and databases.
+  My goal is to acquire comprehensive knowledge across these areas,
+  enabling me to contribute effectively to versatile and impactful projects.
+
+* 🌱 I'm deeply committed to fostering a continuous learning mindset, 
+  prioritizing a thorough understanding of full stack software development. 
+  My focus is on mastering foundational principles rather than chasing 
+  transient tech frameworks that may become obsolete over time. 
+  This approach ensures that I build a solid, adaptable skill set capable 
+  of meeting evolving industry demands and driving sustainable innovation.
+
+* 💞️ I’m looking to collaborate on a single or full stack software development.
+
+            </pre>
+            <div class="mt-4">
+                <a href="https://github.com/weber-droid" target="_blank" class="btn btn-dark me-2" title="GitHub">
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/emmanueltotimeh" target="_blank" class="btn btn-primary me-2" title="LinkedIn">
+                    LinkedIn 
+                </a>
+                <a href="mailto:emmanueltotimeh2002@gmail.com" target="_blank" class="btn btn-danger" title="Email">
+                    Email
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+        <span class="text-muted">
+            &copy; 2024 Emmanuel Tetteh Totimeh. All rights reserved.
+        </span>
+    </div>
+</footer>
+
+
+
+{% endblock %}

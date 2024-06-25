@@ -1,0 +1,60 @@
+#name {
+    font-family: 'Playwrite FR Moderne', sans-serif;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.nav-link.rounded-pill {
+    border-radius: 50px;
+    background-color: #343a40;
+    transition: none;
+}
+
+.nav-link.rounded-pill:hover {
+    background-color: #343a40;
+}
+
+
+/* Example styles */
+
+#about {
+    padding: 50px 0px;
+    background-color: #9fa8b1;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.list-inline {
+    padding: 20px 0 0;
+    list-style: none;
+}
+
+.list-inline-item {
+    margin-right: 20px;
+}
+
+.fa-3x {
+    color: #343a40;
+    /* Adjust icon color */
+}
+
+
+/* Additional styles for responsiveness */
+
+@media (max-width: 768px) {
+    .img-fluid {
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+#mypic {
+    margin-left: 10px;
+}
