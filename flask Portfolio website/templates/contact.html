@@ -37,24 +37,29 @@
       <div class="col-md-8 offset-md-2">
           <div class="contact-form">
               <h2 class="text-center mb-4">Let's Get In Touch</h2>
-              <form action="/submit_contact" method="POST">
+              
+              <form action="/contact" method="POST">
+                  {{ form.hidden_tag() }}
                   <div class="form-group">
-                      <input type="text" class="form-control" id="name1" name="name" placeholder="Enter your name: "  required>
+                      {{ form.name.label(class="form-control-label") }}
+                      {{ form.name(class="form-control", placeholder="Enter your name", required=true) }}
                   </div> <br>
                   <div class="form-group">
-                      <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email:" required>
+                      {{ form.email.label(class="form-control-label") }}
+                      {{ form.email(class="form-control", placeholder="Enter your email", required=true) }}
                   </div> <br>
                   <div class="form-group">                      
-                      <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message here:" required></textarea>
+                      {{ form.message.label(class="form-control-label") }}
+                      {{ form.message(class="form-control", placeholder="Your message here", rows=5, required=true) }}
                   </div> <br>
                   <button type="submit" class="btn btn-primary">Submit</button>
               </form>
+              
+
           </div>
       </div>
   </div>
 </div>
-
-
 </section>
 
 <footer class="footer mt-auto py-3 bg-light">
@@ -75,6 +80,5 @@
       </span>
   </div>
 </footer>
-
 
 {% endblock %}
